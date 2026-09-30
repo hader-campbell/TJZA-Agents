@@ -1,6 +1,6 @@
 # TJZA Agents Changelog
 
-## v7.0.0 — TJZA rebrand and GPT-6.1 Sol architecture
+## v7.0.0 - TJZA rebrand and GPT-6.1 Sol architecture
 
 v7.0.0 is a major orchestration release.
 
@@ -94,7 +94,7 @@ Existing Codex conversation history is not deleted.
 
 ---
 
-## v6.0.4 — Final Xrotel release
+## v6.0.4 - Final Xrotel release
 
 - Added GPT-6-only Xrotel role enforcement.
 - Added proactive subagent lifecycle and capacity hygiene.
@@ -106,7 +106,7 @@ v6.0.4 was the final release under the **Xrotel Agents** name.
 
 ---
 
-## v5.2.2 — Power & Maximum orchestration update
+## v5.2.2 - Power & Maximum orchestration update
 
 ### Power
 
