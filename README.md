@@ -10,13 +10,13 @@ You choose the orchestration profile.
 
 **TJZA handles how the team works.**
 
-> Previously released as **Xrotel Agents**. v7.0.0 introduces the TJZA name and a major orchestration update built around GPT-6.1 Sol.
+> Previously released as **Xrotel Agents**. v7.0.2 introduces the TJZA name and a major orchestration update built around GPT-6.1 Sol.
 
 ---
 
-## 🚀 Latest release: v7.0.0
+## 🚀 Latest release: v7.0.2
 
-TJZA Agents v7.0.0 uses the current orchestration stack:
+TJZA Agents v7.0.2 uses the current orchestration stack:
 
 - **GPT-6 Luna** - high-volume exploration, implementation and validation
 - **GPT-6.1 Sol** - engineering judgement, architecture, difficult problem solving and risk review
@@ -26,7 +26,7 @@ TJZA Agents v7.0.0 uses the current orchestration stack:
 
 **Luna builds. Sol 6.1 engineers. Astra protects intent.**
 
-👉 **[Download TJZA Agents v7.0.0](https://github.com/hader-campbell/TJZA-Agents/releases/latest)**
+👉 **[Download TJZA Agents v7.0.2](https://github.com/hader-campbell/TJZA-Agents/releases/latest)**
 
 ---
 
@@ -205,7 +205,7 @@ If capacity still cannot be recovered, TJZA should serialize the remaining work 
 
 # 🧹 GPT-6-era upgrade hygiene
 
-TJZA v7.0.0 uses these current runtime model families:
+TJZA v7.0.2 uses these current runtime model families:
 
 - `gpt-6-luna`
 - `gpt-6.1-sol`
@@ -303,11 +303,11 @@ No TJZA server, account or external service is required to run the orchestration
 
 # 🔁 Upgrading from Xrotel Agents
 
-TJZA v7.0.0 is the successor to Xrotel Agents.
+TJZA v7.0.2 is the successor to Xrotel Agents.
 
 Existing Xrotel users should:
 
-1. install TJZA v7.0.0 using the included installer;
+1. install TJZA v7.0.2 using the included installer;
 2. run the v7 Project Optimizer once in existing repositories;
 3. allow the optimizer to migrate the legacy Xrotel profile block to the TJZA profile format;
 4. choose the appropriate profile and Primary model; and
