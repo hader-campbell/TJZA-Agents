@@ -1,8 +1,8 @@
 # TJZA Agents Changelog
 
-## v7.0.0 - TJZA rebrand and GPT-6.1 Sol architecture
+## v7.0.2 - TJZA rebrand and GPT-6.1 Sol architecture
 
-v7.0.0 is a major orchestration release.
+v7.0.2 is a major orchestration release.
 
 Xrotel Agents is now **TJZA Agents**, and the orchestration model has been redesigned around the stronger
 GPT-6.1 Sol engineering tier rather than simply replacing model IDs.
