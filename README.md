@@ -1,34 +1,38 @@
-# Xrotel Agents
+# TJZA Agents
 
-### Codex was built for agents. Xrotel helps them work like a team.
+### Codex was built for agents. TJZA helps them work like a team.
 
-Xrotel Agents is a ready-to-use multi-agent orchestration system for OpenAI Codex.
+**TJZA Agents** is a ready-to-use multi-agent orchestration system for OpenAI Codex.
 
-Instead of treating every development task as one long job for one agent, Xrotel gives Codex a structured team of specialised agents for exploration, implementation, validation, engineering review, deeper reasoning and intent protection.
+Instead of treating every development task as one long job for one agent, TJZA gives Codex a structured team of specialised agents for exploration, implementation, validation, engineering review, deeper reasoning, risk review and intent protection.
 
 You choose the orchestration profile.
 
-**Xrotel handles how the team works.**
+**TJZA handles how the team works.**
+
+> Previously released as **Xrotel Agents**. v7.0.0 introduces the TJZA name and a major orchestration update built around GPT-6.1 Sol.
 
 ---
 
-## 🚀 Latest release: v6.0.4
+## 🚀 Latest release: v7.0.0
 
-Xrotel Agents now uses the **GPT-6 model family only** for current orchestration:
+TJZA Agents v7.0.0 uses the current orchestration stack:
 
-- **GPT-6 Luna**
-- **GPT-6 Sol**
-- **GPT-6 Astra**
+- **GPT-6 Luna** — high-volume exploration, implementation and validation
+- **GPT-6.1 Sol** — engineering judgement, architecture, difficult problem solving and risk review
+- **GPT-6 Astra** — intent protection and exceptional high-level product or architecture decisions
 
-Version 6.0.4 also improves agent lifecycle management, removes stale Xrotel agent definitions during upgrades, avoids reusing legacy model threads, and helps reclaim completed or idle Xrotel subagent threads when capacity is constrained.
+### Core philosophy
 
-👉 **[Download Xrotel Agents v6.0.4](https://github.com/hader-campbell/Xrotel-Agents/releases/latest)**
+**Luna builds. Sol 6.1 engineers. Astra protects intent.**
+
+👉 **[Download TJZA Agents v7.0.0](https://github.com/hader-campbell/TJZA-Agents/releases/latest)**
 
 ---
 
-## 🔒 Before anything else: Xrotel does not modify Codex
+## 🔒 TJZA does not modify Codex
 
-Xrotel does **not** inject into, patch, replace or modify the Codex application.
+TJZA does **not** inject into, patch, replace or modify the Codex application.
 
 It does not:
 
@@ -39,26 +43,26 @@ It does not:
 - modify your ChatGPT or Codex subscription;
 - bypass usage controls;
 - spoof another client;
-- share or require your OpenAI credentials;
+- share or require your OpenAI credentials; or
 - install a background service between you and OpenAI.
 
-Xrotel is a configuration and instruction package designed to work with Codex's existing project instructions and agent functionality.
+TJZA is a configuration and instruction package designed to work with Codex's existing project-instruction and agent functionality.
 
 **Your Codex installation remains Codex.**
 
 ### Works with Codex — not around it.
 
-Xrotel is an independent third-party project and is not affiliated with, sponsored by or endorsed by OpenAI.
+TJZA is an independent third-party project and is not affiliated with, sponsored by or endorsed by OpenAI.
 
 ---
 
 # 🤖 Meet the team
 
-The important part isn't simply having more agents.
+The important part is not simply having more agents.
 
-**It's knowing when to use them.**
+**It is knowing when to use them.**
 
-Xrotel separates different kinds of development work across specialised roles.
+TJZA separates different kinds of development work across specialised roles.
 
 ### 🔎 Repository Explorer
 
@@ -72,35 +76,35 @@ Handles focused implementation once the problem and relevant scope are understoo
 
 Validates implementations independently and reports whether the required checks actually pass.
 
-### 🛡 Engineering & Risk Review
+### 🏗 Engineering Architect / Reviewer
 
-Reviews significant or sensitive changes for architectural problems, regressions, security implications, edge cases and other risks that implementation alone may miss.
+Uses stronger engineering judgement where architecture, ownership, lifecycle, persistence, rendering or replacement hygiene matters.
+
+### 🛡 Risk Reviewer
+
+Examines high-risk or sensitive changes for regressions, security implications, edge cases and architectural failure modes.
 
 ### 🧠 Deep Solver
 
-Handles bounded difficult engineering problems when deeper reasoning is genuinely warranted.
-
-### 🏗 Lead Architect
-
-Provides higher-level technical judgement for difficult planning, architectural decisions and complex implementation boundaries.
+Handles bounded difficult engineering problems when deeper technical reasoning is genuinely warranted.
 
 ### 🎯 Intent Agents
 
-Help preserve what you actually asked for so that increasingly complicated development work does not drift away from the original goal.
+Help preserve what you actually asked for so increasingly complicated development work does not drift away from the intended product, gameplay, UX or visual goal.
 
 ### 📚 Evidence Curator
 
-Helps gather and consolidate evidence when decisions need stronger technical grounding.
+Gathers and consolidates focused evidence when decisions need stronger technical grounding.
 
 ### 🚀 Frontier Architect
 
-Reserved for especially difficult product or architectural reasoning where the selected orchestration profile calls for it.
+Reserved for exceptional product or architectural ambiguity where stronger intent-level judgement is justified.
 
 ---
 
 # Four orchestration profiles
 
-Xrotel lets each project use the profile appropriate for the work being performed.
+TJZA lets each project use the profile appropriate for the work being performed.
 
 ## ⚡ Efficient
 
@@ -112,19 +116,21 @@ Recommended starting primary:
 
 **GPT-6 Luna High**
 
+Efficient keeps most work inside the Luna family and selectively calls GPT-6.1 Sol when stronger engineering judgement is justified.
+
 ---
 
 ## ⚖️ Balanced
 
-**The everyday Xrotel profile.**
+**The everyday TJZA profile.**
 
-Designed for normal software-development work where you want strong GPT-6 Luna capability with selective stronger engineering review when a change is significant enough to justify it.
+Designed for normal software-development work where you want strong GPT-6 Luna capability with stronger engineering review for significant changes.
 
 Recommended starting primary:
 
 **GPT-6 Luna Max**
 
-Balanced also places more emphasis on delegated implementation and stronger review for significant changes, helping reduce architectural drift and unnecessary layering as projects grow.
+Balanced delegates non-trivial implementation to Luna workers rather than allowing the Primary to absorb routine building. Significant engineering changes receive GPT-6.1 Sol review even when tests pass.
 
 ---
 
@@ -132,13 +138,17 @@ Balanced also places more emphasis on delegated implementation and stronger revi
 
 **For demanding engineering work.**
 
-Power gives the primary stronger responsibility for technical direction while substantial implementation work is delegated appropriately.
+Power places GPT-6.1 Sol in the lead for engineering direction while delegating implementation volume to GPT-6 Luna.
 
 Recommended starting primary:
 
-**GPT-6 Sol Medium**
+**GPT-6.1 Sol Medium**
 
-Reasoning level remains flexible within the supported Sol family.
+The guiding rule is:
+
+**Sol leads. Luna builds.**
+
+A second independent Sol review is used only when separation adds meaningful value rather than being invoked ceremonially.
 
 ---
 
@@ -146,74 +156,95 @@ Reasoning level remains flexible within the supported Sol family.
 
 **For the difficult jobs.**
 
-Maximum is designed for complex work where stronger product intent, architecture, acceptance and deeper engineering judgement matter more than keeping the workflow minimal.
+Maximum is designed for complex work where product intent, architecture, acceptance and engineering judgement all matter.
 
 Recommended starting primary:
 
 **GPT-6 Astra Medium**
 
+Maximum keeps model responsibilities deliberately separated:
+
+**Astra decides. Sol 6.1 engineers. Luna builds.**
+
+Astra is reserved primarily for intent, ambiguity and final product alignment rather than routine technical difficulty.
+
 ---
 
 # 🔄 Switch profiles per project
 
-You don't have to reinstall Xrotel every time you want a different workflow.
+You do not have to reinstall TJZA every time you want a different workflow.
 
 After the Universal Core has been installed, an individual project can be switched between:
 
 **Efficient → Balanced → Power → Maximum**
 
-The project's Xrotel profile changes without replacing your global agent files or modifying your source code.
+The project's TJZA profile changes without replacing your global agent files or modifying your source code.
 
-Start a fresh Codex session after changing a project profile so its project instructions are loaded cleanly.
+Start a fresh Codex session after changing a project profile so the new project instructions are loaded cleanly.
 
 ---
 
-# ♻️ Cleaner agent lifecycle
+# ♻️ Subagent lifecycle protection
 
-Long-running Codex use can leave many completed or stale agent threads behind.
+Long-running Codex use can leave large numbers of completed or stale subagent threads behind.
 
-Xrotel v6.0.4 adds lifecycle guidance so that, where Codex supports it:
+TJZA includes lifecycle and capacity guidance so that, where the Codex runtime supports it:
 
-- completed, failed, cancelled, abandoned or clearly idle **Xrotel** worker threads can be reclaimed;
-- stale legacy Xrotel workers are not reused for new work;
-- current useful workers are left alone;
+- completed, failed, cancelled, abandoned or clearly idle **TJZA** worker threads can be reclaimed;
+- stale Xrotel or legacy-model workers are not reused for new work;
 - the active Primary thread is never intentionally reclaimed;
+- actively useful workers are left alone;
 - unrelated user-created threads are not touched;
-- required orchestration is retried before falling back simply because capacity was full.
+- stale legacy workers are reclaimed before current GPT-6 workers;
+- required orchestration is retried after capacity is recovered; and
+- completed workers should be reclaimed after their useful result has been consumed.
 
-This helps prevent finished worker threads from accumulating indefinitely and consuming available subagent capacity.
+If capacity still cannot be recovered, TJZA should serialize the remaining work rather than silently skipping required review or forcing the Primary to absorb material implementation.
 
 ---
 
-# 🧹 GPT-6-only upgrades
+# 🧹 GPT-6-era upgrade hygiene
 
-Xrotel v6.0.4 uses only current GPT-6 model roles.
+TJZA v7.0.0 uses these current runtime model families:
 
-When you use the included installer, Xrotel removes existing `xrotel_*.toml` agent definitions from your Codex agents folder before copying the current role set.
+- `gpt-6-luna`
+- `gpt-6.1-sol`
+- `gpt-6-astra`
 
-This prevents old Xrotel role files from earlier releases from remaining active alongside the new GPT-6 configuration.
+The included installer removes old TJZA and Xrotel agent-role files before copying the current role set.
 
-Existing Codex conversation history is not deleted.
+Legacy Xrotel tools are also migrated to the TJZA tool location.
+
+Existing Codex conversation history is **not** deleted.
+
+Old Xrotel or pre-v7 worker threads may remain visible in history, but current TJZA orchestration must not resume or reuse them when they use unsupported model families.
 
 ---
 
 # 📊 Agent Usage reporting
 
-Xrotel includes Agent Usage reporting so you can see which agent roles were used for a task and what they were used for.
+TJZA includes Agent Usage reporting so you can see which agents were used for a task, what each one was used for and what outcome it produced.
 
-Current releases also include runtime identity tooling intended to report the actual model and reasoning level used by the Primary and spawned Xrotel agents, rather than relying only on configured defaults.
+The current runtime-reporting tools are designed to report the actual model and reasoning level used by the Primary and spawned TJZA workers rather than relying only on configured defaults.
 
-This makes it easier to see when stronger models were used and whether the selected orchestration profile behaved as expected.
+This helps expose:
+
+- which model/reasoning combinations were actually used;
+- whether stronger models were invoked and why;
+- whether implementation was delegated appropriately;
+- whether significant-change review occurred;
+- whether a runtime/configuration mismatch occurred; and
+- whether legacy or unsupported workers appeared.
 
 ---
 
-# ⬇️ Download Xrotel Agents
+# ⬇️ Download TJZA Agents
 
 ## 🚀 Get the latest release
 
-👉 **[Download Xrotel Agents](https://github.com/hader-campbell/Xrotel-Agents/releases/latest)**
+👉 **[Download TJZA Agents](https://github.com/hader-campbell/TJZA-Agents/releases/latest)**
 
-The **complete package** is recommended if you want all available Xrotel orchestration profiles:
+The **complete package** is recommended if you want all TJZA orchestration profiles:
 
 - ⚡ Efficient
 - ⚖️ Balanced
@@ -222,7 +253,7 @@ The **complete package** is recommended if you want all available Xrotel orchest
 
 Individual profile packages are also available under **Assets** on the release page.
 
-Xrotel is free to download and use under the included licence.
+TJZA is free to download and use under the included licence.
 
 ---
 
@@ -230,29 +261,30 @@ Xrotel is free to download and use under the included licence.
 
 ## Windows
 
-After downloading your chosen Xrotel package:
+After downloading your chosen TJZA package:
 
 1. Extract the ZIP.
 2. Open PowerShell in the extracted package folder.
 3. Run:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File ".\Install\INSTALL-WINDOWS.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File ".\\Install\\INSTALL-WINDOWS.ps1"
 ```
 
 The installer will:
 
-- install the global Xrotel `AGENTS.md`;
-- remove obsolete Xrotel agent TOMLs from previous versions;
-- install the current GPT-6 agent TOMLs;
-- install the Xrotel runtime reporting tools.
+- install the global TJZA `AGENTS.md`;
+- remove obsolete Xrotel and TJZA agent TOMLs from previous versions;
+- install the current TJZA agent TOMLs;
+- migrate/remove obsolete Xrotel runtime tools where applicable; and
+- install the current TJZA runtime-reporting tools.
 
 You do **not** need to manually copy the agent TOMLs after running the installer.
 
 Then:
 
-4. Run the included Project Optimizer once for projects you want to make profile-switchable or refresh.
-5. Select the appropriate primary model and reasoning level in Codex.
+4. Run the included **Project Optimizer** once for existing Xrotel projects or repositories you want to make profile-switchable.
+5. Select the appropriate Primary model and reasoning level in Codex.
 6. Start a fresh Codex session.
 
 ## macOS / Linux
@@ -265,13 +297,29 @@ sh ./Install/install-macos-linux.sh
 
 Then run the Project Optimizer where needed and start a fresh Codex session.
 
-No Xrotel server, account or external service is required to run the orchestration package.
+No TJZA server, account or external service is required to run the orchestration package.
+
+---
+
+# 🔁 Upgrading from Xrotel Agents
+
+TJZA v7.0.0 is the successor to Xrotel Agents.
+
+Existing Xrotel users should:
+
+1. install TJZA v7.0.0 using the included installer;
+2. run the v7 Project Optimizer once in existing repositories;
+3. allow the optimizer to migrate the legacy Xrotel profile block to the TJZA profile format;
+4. choose the appropriate profile and Primary model; and
+5. start a fresh Codex session.
+
+The optimizer is designed to preserve the selected profile while migrating legacy Xrotel profile markers to TJZA markers.
 
 ---
 
 # 🔐 Your code stays where it is
 
-Xrotel does not require you to upload your repository to Xrotel.
+TJZA does not require you to upload your repository to TJZA.
 
 It does not act as an API proxy and does not need access to your OpenAI credentials.
 
@@ -279,9 +327,9 @@ The configuration operates in the Codex environment where you install it.
 
 ---
 
-# ❤️ Xrotel is free
+# ❤️ TJZA is free
 
-Xrotel Orchestrator is currently available free of charge.
+TJZA Agents is currently available free of charge.
 
 If it improves your Codex workflow, saves you time or helps you build better software, you can optionally support continued development.
 
@@ -289,7 +337,7 @@ If it improves your Codex workflow, saves you time or helps you build better sof
 
 https://www.paypal.com/ncp/payment/X3YXRNX2WWSZ6
 
-### Support Xrotel monthly — $3/month
+### Support TJZA monthly — $3/month
 
 https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-1HU900860L732862RNKMIYKY
 
@@ -300,7 +348,7 @@ Can't support financially?
 ⭐ Star the repository  
 🐛 Report an issue  
 💬 Share your experience  
-📣 Tell another developer about Xrotel  
+📣 Tell another developer about TJZA  
 
 That helps too.
 
@@ -308,13 +356,13 @@ That helps too.
 
 # 📝 Licensing
 
-Xrotel is free to use under the included Xrotel Personal / Internal Use License.
+TJZA is free to use under the included **TJZA Agents Personal / Internal Use License**.
 
-You may use and modify Xrotel for your own personal or commercial software-development work.
+You may use and modify TJZA for your own personal or commercial software-development work.
 
 Redistribution, resale, mirroring or repackaging for unrelated third parties is not permitted.
 
-See `LICENSE.txt` inside the release package for the complete terms.
+See `LICENSE.md` for the complete terms.
 
 ---
 
@@ -322,10 +370,10 @@ See `LICENSE.txt` inside the release package for the complete terms.
 
 OpenAI may independently change Codex, available models, reasoning levels, configuration behaviour or agent capabilities.
 
-Xrotel will continue to evolve alongside supported Codex workflows where practical.
+TJZA will continue to evolve alongside supported Codex workflows where practical.
 
 ---
 
-# Xrotel Agents
+# TJZA Agents
 
 **Build with a team, not just an agent.**
