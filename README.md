@@ -18,9 +18,9 @@ You choose the orchestration profile.
 
 TJZA Agents v7.0.0 uses the current orchestration stack:
 
-- **GPT-6 Luna** — high-volume exploration, implementation and validation
-- **GPT-6.1 Sol** — engineering judgement, architecture, difficult problem solving and risk review
-- **GPT-6 Astra** — intent protection and exceptional high-level product or architecture decisions
+- **GPT-6 Luna** - high-volume exploration, implementation and validation
+- **GPT-6.1 Sol** - engineering judgement, architecture, difficult problem solving and risk review
+- **GPT-6 Astra** - intent protection and exceptional high-level product or architecture decisions
 
 ### Core philosophy
 
